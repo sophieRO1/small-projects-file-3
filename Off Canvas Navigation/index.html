@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Off Canvas Navigation</title>
+	<link rel="stylesheet" href="style.css">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+	
+</head>
+<body>
+	
+	<div class="page">
+		<span class="menu-toggle">
+			<i class="menu-open fa fa-bars fa-lg"></i>
+			<i class="menu-close fa fa-times fa-lg"></i>
+		</span>
+
+		<ul class="menu-items">
+			<li><a href="#" title="">Home</a></li>
+			<li><a href="#" title="">About</a></li>
+			<li><a href="#" title="">Contact</a></li> 
+		</ul>
+
+		<main class="content">
+			<div class="content-inner">
+				<h1>Responsive Animated Off Canvas Menu </h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			</div>
+		</main>
+	</div>
+
+
+<script>
+     var $page = $('.page');
+     $('.menu-toggle').on('click', function() {
+
+     	$page.toggleClass('shazam');
+
+     });
+
+     $('content').on('click',function() {
+     	$page.removeClass('shazam');
+     })
+
+
+	
+</script>
+</body>
+</html>
